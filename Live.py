@@ -21,9 +21,12 @@ def load_game():
     difficult = test_input("1", "5", difficult)
 
     if int(game) == 1:
+        print("Memory Game - a sequence of numbers will appear for 1 second and you have to guess it back\n")
         MemoryGame.play(difficult)
     elif int(game) == 2:
+        print("Guess Game - guess a number and see if you chose like the computer\n")
         GuessGame.play(difficult)
     else:
+        print("Currency Roulette - try and guess the value of a random amount of USD in ILS")
         CurrencyRouletteGame.play(difficult)
 
